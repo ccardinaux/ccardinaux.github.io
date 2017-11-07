@@ -1,3 +1,13 @@
 <header class="site-header" role="banner">
 
+  {% if page.layout == 'home' %}
+
+    <h1><a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a></h1>
+
+  {% else %}
+
+    <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+
+  {% endif %}
+
 </header>

@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,13 +8,17 @@
 
   <body>
 
-    {% include header.html %}
+    <div class="wrapper">
 
-    <main>
-      {{ content }}
-    </main>
+      {% include header.html %}
 
-    {% include footer.html %}
+      <main>
+        {{ content }}
+      </main>
+
+      {% include footer.html %}
+
+    </div>
 
   </body>
 
