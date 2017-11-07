@@ -20,6 +20,7 @@ gulp.task('eslint', () => {
 gulp.task('stylelint', () => {
   gulp.src('_sass/**/*.scss')
     .pipe(stylelint({
+      failAfterError: false,
       reporters: [
         {
           formatter: 'string',
