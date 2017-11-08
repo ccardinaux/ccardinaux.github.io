@@ -12,9 +12,10 @@ github_username:  ccardinaux
 collections:
   projects:
     output: true
+    permalink: /projects/:name/
   project_tags:
     output: true
-    permalink: /projects/:name/
+    permalink: /projects/tags/:name/
 
 # Build settings
 markdown: kramdown
