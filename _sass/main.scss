@@ -1,7 +1,7 @@
 @import 'normalize';
+@import 'fonts';
 
 $base-color: #333;
-$base-font: Georgia, 'Times New Roman', Times, serif;
 $accent-color: #ff4040;
 
 html {
@@ -30,6 +30,14 @@ body {
     .full-width {
       grid-column: 1 / -1;
     }
+  }
+}
+
+.site-header {
+  .site-title {
+    font-family: $fell-font-regular;
+    color: $accent-color;
+    text-decoration: none;
   }
 }
 
