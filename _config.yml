@@ -33,3 +33,18 @@ exclude:
   - package.json
   - node_modules
   - gulpfile.js
+
+# Defaults
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
+  -
+    scope:
+      path: ""
+      type: "project_tags"
+    values:
+      layout: "project-tag"

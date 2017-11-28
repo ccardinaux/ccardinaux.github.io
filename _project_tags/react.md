@@ -1,5 +1,4 @@
 ---
-layout: default
 slug: react
 name: React
 ---

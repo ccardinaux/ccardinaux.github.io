@@ -1,0 +1,16 @@
+---
+layout: default
+---
+<h1 class="page-heading">{{ page.name | escape }}</h1>
+
+<ul class="post-list">
+  {% for project in site.projects %}
+    {% if project.tags contains page.name %}
+      <li>
+        <h2>
+          <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
+        </h2>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>

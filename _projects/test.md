@@ -1,5 +1,4 @@
 ---
-layout: project
 title: Testing projects...
 tags: [React, JavaScript, WordPress]
 ---

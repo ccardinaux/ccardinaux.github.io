@@ -1,5 +1,4 @@
 ---
-layout: default
 slug: wordpress
 name: WordPress
 ---
