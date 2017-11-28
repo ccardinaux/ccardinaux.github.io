@@ -5,13 +5,19 @@ layout: default
 
   <header class="post-header">
     <h1 class="post-title">{{ page.title | escape }}</h1>
-    <ul class="post-tags">
-      {% for tag in page.tags %}
-      <li>
-        <a class="post-link" href="{{ tag.url | relative_url }}">{{ tag.name | escape }}</a>
-      </li>
-      {% endfor %}
-    </ul>
+    {% if page.tags.size > 0 %}
+      <ul class="post-tags">
+        {% for project_tag in page.tags %}
+          {% assign tag = site.project_tags | where: "name", project_tag %}
+          {% if tag %}
+            {% assign tag = tag[0] %}
+            <li>
+              <a class="post-link" href="{{ tag.url | relative_url }}">{{ tag.name | escape }}</a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    {% endif %}
   </header>
 
   <div class="post-content">
