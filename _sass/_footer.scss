@@ -1,0 +1,16 @@
+@import 'variables';
+
+.site-footer {
+  font-size: 0.9em;
+  margin-bottom: 1em;
+
+  &,
+  a {
+    color: lighten($base-color, 20%);
+    transition: color 200ms;
+  }
+
+  a:hover {
+    color: $accent-color;
+  }
+}

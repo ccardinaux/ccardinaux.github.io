@@ -1,0 +1,56 @@
+@import 'variables';
+
+html {
+  font-size: 100%;
+}
+
+body {
+  background-color: $background-color;
+  font-family: $base-font;
+  color: $base-color;
+  margin: 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  @media (max-width: $breakpoint-1) {
+    max-width: $content-width-1;
+    padding: 0 32px;
+  }
+
+  @media (max-width: ($breakpoint-2 - 1)) and (min-width: $breakpoint-1) {
+    max-width: $content-width-2;
+    padding: 0 40px;
+  }
+
+  @media (min-width: $breakpoint-2) {
+    width: $content-width-3;
+    padding: 0 46px;
+  }
+
+  @media (min-width: $breakpoint-3) {
+    width: $content-width-4;
+    padding: 0 60px;
+  }
+}
+
+.content {
+  flex: 1 0 auto;
+
+  &.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-auto-rows: minmax(150px, auto);
+
+    .site-header,
+    .site-footer,
+    .full-width {
+      grid-column: 1 / -1;
+    }
+  }
+}

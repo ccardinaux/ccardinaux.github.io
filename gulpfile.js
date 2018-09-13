@@ -35,7 +35,7 @@ gulp.task('sass', ['stylelint'], () => {
   gulp.src('_sass/main.scss')
     .pipe(sass({
       includePaths: [
-        path.join(__dirname, '/node_modules/normalize.css/'),
+        path.join(__dirname, '/node_modules/normalize-scss/sass/'),
       ],
     }))
     .pipe(autoprefixer(['last 2 versions']))
