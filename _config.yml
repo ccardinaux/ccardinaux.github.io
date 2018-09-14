@@ -1,9 +1,8 @@
 # Site settings
 title: Charles Cardinaux
-tagline: Experienced web developer in Seattle, Washington
 email: charles@charlescardinaux.com
 description: > # this means to ignore newlines until "baseurl:"
-  Charles Cardinaux is a web developer based in Seattle, Washington.
+  Experienced web developer in Seattle, Washington
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://www.charlescardinaux.com" # the base hostname & protocol for your site, e.g. http://example.com
 linkedin_username: charlescardinaux
