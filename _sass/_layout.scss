@@ -1,14 +1,9 @@
 @import 'variables';
 
-html {
-  font-size: 100%;
-}
-
 body {
   background-color: $background-color;
   font-family: $base-font;
   color: $base-color;
-  margin: 0;
 }
 
 .wrapper {
