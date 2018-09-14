@@ -5,16 +5,4 @@ layout: default
 
   {{ content }}
 
-  <h2 class="page-heading">Projects</h2>
-
-  <ul class="post-list">
-    {% for project in site.projects %}
-      <li>
-        <h2>
-          <a class="post-link" href="{{ project.url | relative_url }}">{{ project.title | escape }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
 </div>
