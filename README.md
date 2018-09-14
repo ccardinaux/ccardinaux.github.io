@@ -1,3 +1,3 @@
 # ccardinaux.github.io
 
-Copyright 2017 Charles Cardinaux
+Copyright 2018 Charles Cardinaux
